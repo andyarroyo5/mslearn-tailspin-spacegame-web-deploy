@@ -7,7 +7,6 @@ variables:
 stages:
 - stage: 'Staging'
   displayName: 'Deploy to the staging environment'
-  dependsOn: Test
   jobs:
   - deployment: Deploy
     pool:
